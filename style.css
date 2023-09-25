@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(images/header-image.png);
+background-position: center;
+background-size: cover;
+padding: 12px ;
+position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 5rem;
+    position: fixed;
+     z-index: 100;
+ 
+}
+.Netflix__icon{
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav__right button{
+padding:0.5rem 1rem;
+margin-left: 1rem;
+border-radius: 5%;
+font-size: .9rem;
+font-weight: 500;
+border: 0;
+outline: 0;
+background-color: #db0001;
+color: #ffff;
+transition: background .5s ease-in;
+cursor: pointer;
+}
+
+.nav__right button:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+.nav__right .language__btn{
+   background: transparent;
+   border: 1px solid white;
+}
+
+.language__btn span img{
+ width: 1rem;
+ margin-left: .5rem;
+}
+.header__content{
+    max-width: 1170px;
+   margin-top:300px;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   flex-basis: 50%;
+   /* transform: translate(-50%,-50%); */
+margin-left: auto;
+margin-right: auto;
+   
+}
+
+.header__content h1{
+    font-size:2.9rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+.header__content h3{
+
+font-size: 2rem;
+margin-bottom: .5rem;
+}
+
+.header__content p{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.email__signup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #d0cece; */
+  margin-top: 2rem;
+  
+}
+.email__signup .form-control{
+
+height:3.2rem;
+width: 400px;
+border: 0;
+outline: 0;
+border-radius: 5px;
+padding: 1rem .9rem;
+background-color:#0f1112;
+color: #fff;
+border: 1px solid #fff;
+
+
+}
+.email__signup button{
+    border-radius: 5px;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: 0;
+    outline: 0;
+    height:3.2rem;
+    width: 200px;
+    margin-left: .5rem;
+    padding: 0 .5rem;
+}
+
+.features{
+  
+    padding: 1rem 12%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+flex-basis: 50%;
+margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+ .img-col img{
+    display:block;
+    width:90%;
+    margin: auto;
+}
+
+.text-col h1{
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+.text-col p{
+    font-size: 1.2rem;
+
+}
+.faq{
+    padding: 40px 5%;
+    text-align: center;
+    font-size: 21px;
+    
+} 
+.accordian{
+    margin: 50px auto;
+    width: 100%;
+   max-width: 900px;
+}
+.accordian li{
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.accordian li label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #303030;
+    padding: 1em .5em;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .5s ease-in;
+}
+.accordian label:hover{
+    background-color: #585757;
+}
+.accordian li label::after{
+content: "+";
+position: absolute;
+right: 3%;
+font-size: 2.3em;
+cursor: pointer;
+transition: transform .5s ease-in;
+}
+
+ input[type="radio"]{
+
+    display: none;
+}
+
+
+.accordian .content {
+
+   
+    margin: .5em 0;
+    text-align: left;
+   font-size: .9em;
+   background:#303030 ;
+   padding: 0 1em;
+   max-height:0;
+   overflow: hidden;
+   transition: max-height .5s ease;
+}
+
+.accordian input[type="radio"]:checked+ label + .content{
+    max-height: 600px;
+    padding: 1.5rem 1rem;
+}
+.accordian input[type="radio"]:checked+ label ::after{
+  transform: rotate(135deg);
+}
+
+
+.email__signup-2{
+font-size: 1rem;
+   margin: 50px auto 0;
+   max-width: 750px;
+   /* margin-left:auto ;
+   margin-right: auto; */
+}
+.email__signup-2 .form-control{
+border: 1px solid rgb(91, 145, 11);
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 50px 15% 20px;
+    border-top:5px solid #303030 ;
+    color: #777;
+}
+
+.footer .col h2{
+    font-size:.9rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: #e5e1e1;
+    text-decoration: underline;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex:1;
+    margin-bottom: 1.5rem;
+}
+.footer a{
+   display: block;
+   text-decoration: none;
+   font-size: .9rem;
+   margin-bottom: 1rem;
+   color: #777;
+}
+.footer .language__btn{
+background: transparent;
+border: 1px solid #fff;
+color: #fff;
+margin-bottom: 5px;
+padding: .5rem 1rem;
+}
+
+::-webkit-scrollbar{
+width: 0.475rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #db0001;
+    border-radius: 0.675rem;
+}
+::-webkit-scrollbar-track{
+    border-radius: 0.5rem;
+    background-color: #2a2121;
+}
+@media screen and (max-width:600px) {
+ 
+nav .Netflix__icon{
+    width: 100px;
+
+}
+
+nav .language__btn{
+padding: 4px 8px;
+}
+.header__content{
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+    width: 500px;
+    text-align: center;
+}
+.header__content h1{
+    font-size: 25px;
+}
+.header__content h3{
+    font-size: 20px;
+}
+.email__signup{
+    
+    padding: 5px 10px;
+    width: 500px;
+}
+.email__signup .submit-btn{
+    font-size: 15px;
+}
+.text-col,.img-col{
+    flex-basis: 100%;
+}
+.features h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.features p{
+    font-size: 20px;
+}
+.row:nth-child(2),.row:nth-child(4){
+    flex-direction: column-reverse;
+}
+.footer .language__btn{
+    padding:5px 12px;
+    font-size: .65rem;
+}
+
+
+}
